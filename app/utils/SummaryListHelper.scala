@@ -89,9 +89,11 @@ class SummaryListHelper @Inject() (countryService: CountryService) {
       )
     )
 
-  private def correspondenceAddressRow(correspondenceAddress: String)(implicit messages: Messages): SummaryListRow =
+  private def correspondenceAddressRow(correspondenceAddress: String)(implicit messages: Messages): SummaryListRow = {
+    val addressHtmlString = correspondenceAddress.split("\n").map(line => s"<span class='break'>$line</span>").mkString
     SummaryListRowViewModel(
       key = KeyViewModel(HtmlContent(messages("checkYourAnswers.correspondenceAddress.key"))),
-      value = ValueViewModel(HtmlContent(correspondenceAddress.replace("\n", "<br>")))
+      value = ValueViewModel(HtmlContent(addressHtmlString))
     )
+  }
 }
