@@ -14,6 +14,7 @@
  * limitations under the License.
  *@
 
+@import viewmodels.govuk.all._
 @import viewmodels.LabelSize
 
 @this(
@@ -38,7 +39,7 @@
             InputViewModel(
                 field = form("emailAddress"),
                 label = LabelViewModel(messages("changePreferences.enter-email-address.title")).asPageHeading(size = LabelSize.Large),
-            )
+            ).asEmail()
         )
 
         @govukButton(
