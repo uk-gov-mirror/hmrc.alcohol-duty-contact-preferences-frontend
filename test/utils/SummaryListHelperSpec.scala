@@ -68,7 +68,8 @@ class SummaryListHelperSpec extends SpecBase {
 
   val correspondenceAddressWithCountry = correspondenceAddress + "\nUnited Kingdom"
 
-  val correspondenceAddressHtmlString = "<span class='break'>Flat 123</span><span class='break'>1 Example Road</span><span class='break'>London</span><span class='break'>AB1 2CD</span><span class='break'>United Kingdom</span>"
+  val correspondenceAddressHtmlString =
+    "<span class='break'>Flat 123</span><span class='break'>1 Example Road</span><span class='break'>London</span><span class='break'>AB1 2CD</span><span class='break'>United Kingdom</span>"
 
   val correspondenceAddressRow = SummaryListRowViewModel(
     key = KeyViewModel(HtmlContent(messages("checkYourAnswers.correspondenceAddress.key"))),
