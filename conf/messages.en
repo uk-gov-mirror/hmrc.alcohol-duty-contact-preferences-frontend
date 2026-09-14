@@ -61,8 +61,8 @@ beforeYouStart.radios.legend = How would you like to be contacted?
 beforeYouStart.radios.hint = You can change this preference at any time
 beforeYouStart.radios.email = Email me when I have a message in my account
 beforeYouStart.radios.post = Continue receiving letters by post
-beforeYouStart.radios.post.hint = We'll send letters to your correspondence address
-beforeYouStart.emailAddress.label = Email Address
+beforeYouStart.radios.post.hint = We''ll send letters to your correspondence address
+beforeYouStart.emailAddress.label = Email address
 
 enrolledEmails.title = We will email you when you have a digital message
 enrolledEmails.heading = We will email you at {0} when you have a digital message
